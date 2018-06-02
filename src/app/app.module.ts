@@ -7,6 +7,9 @@ import { HomeComponent } from './home/home.component';
 import { WeatherComponent } from './ui/weather/weather.component';
 import { AddCardComponent } from './ui/add-card/add-card.component';
 import { DetailsComponent } from './pages/details/details.component';
+import { AddComponent } from './pages/add/add.component';
+import { LoginComponent } from './pages/login/login.component';
+import { SignupComponent } from './pages/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { DetailsComponent } from './pages/details/details.component';
     HomeComponent,
     WeatherComponent,
     AddCardComponent,
-    DetailsComponent
+    DetailsComponent,
+    AddComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
