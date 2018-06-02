@@ -9,21 +9,14 @@
 
 /*
 ================
-
-  HEADER
-
+    Header
 ================
 */
 
-
 /*
-
-  SLIDE MENU
-
- = = = = = = = =
-
+    Slide Menu
+= = = = = = = = =
 */
-
 .side-menu__container {
   position: fixed;
   left: 0;
@@ -55,6 +48,10 @@
 }
 
 .side-menu__container-active::before {
+  opacity: 0.3;
+}
+
+.slide-menu {
   box-sizing: border-box;
   transform: translateX(-103%);
   position: relative;
@@ -62,7 +59,7 @@
   left: 0;
   z-index: 10;
   height: 100%;
-  widows: 90%;
+  width: 90%;
   max-width: 26rem;
   background-color: white;
   box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
@@ -74,8 +71,7 @@
   will-change: transform;
 }
 
-
-.side-menu-active {
+.slide-menu-active {
   transform: none;
 }
 
@@ -92,14 +88,13 @@
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 255, 0.2);
 }
 
-
 .greeting__text {
   grid-area: greeting;
   font-size: 1.25rem;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
   margin-top: 1rem;
-  justify-content: center;
+  justify-self: center;
   align-self: center;
 }
 
@@ -141,24 +136,22 @@
   margin-left: 2rem;
 }
 
-
 .profile__image {
   max-width: 4rem;
 }
 
-
-/* Header */
+/*Header*/
 .main__header {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 0.25fr;
   grid-template-rows: 1fr;
-  box-shadow: 0 0 2rem rgba(0 0 255 0.1);
+  box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
   height: 4rem;
   margin: 0;
   align-items: center;
   transition: background-color 500ms linear;
-  animation: 1s  ease-in-out 0ms 1  fadein;
+  animation: fadein 1s ease-in-out 0ms 1;
 }
 
 .main__header-dark {
@@ -172,11 +165,16 @@
   margin: 0 0.5rem;
 }
 
+.mode-toggle__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
 .mode-toggle__bg {
   height: 1rem;
   width: 2rem;
   border-radius: 0.5rem;
-  background-color: rgba(0, 0, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   display: inline-block;
   transition: background-color 300ms linear;
 }
@@ -208,7 +206,7 @@
   letter-spacing: 0.1rem;
 }
 
-/* content */
+/*Content*/
 .left__section {
   display: grid;
   grid-template-rows: 1fr;
@@ -223,7 +221,7 @@
   margin: 0.5rem 0;
 }
 
-/* SVG */
+/*SVGs*/
 .hamburger__icon {
   position: relative;
   z-index: 35;
